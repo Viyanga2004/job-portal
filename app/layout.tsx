@@ -14,6 +14,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link
+          rel="icon"
+          type="image/png"
+          href="https://cdn-icons-png.flaticon.com/512/833/833472.png"
+        />
+      </head>
       <body>{children}</body>
     </html>
   )
