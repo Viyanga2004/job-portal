@@ -5,7 +5,6 @@ export const metadata: Metadata = {
   title: 'Job Finder',
   description: 'Created with v0',
   generator: 'v0.dev',
-  <meta confirm="partners-house-188101"/>
 }
 
 export default function RootLayout({
@@ -16,6 +15,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <meta confirm="partners-house-188101" />
         <link
           rel="icon"
           type="image/png"
